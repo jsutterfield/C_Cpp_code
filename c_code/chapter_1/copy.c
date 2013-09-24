@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/* copy input to output; 1st version 
+main()
+{
+    int c;
+
+    c = getchar();
+    while (c != EOF) {
+        putchar(c);
+        c = getchar();
+    }
+} */
+
+/* copy input to output; 2nd version 
+main()
+{
+    int c;
+
+    while((c = getchar()) != EOF)
+        putchar(c)
+}
+*/
+
+main()
+{
+    printf(">> ");
+    printf("Return value of getchar() != EOF:  %d\n", (getchar() != EOF));
+}
